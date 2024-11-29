@@ -62,9 +62,9 @@ nav {
     padding: 1.2rem 0;
     border-top: 1px solid rgb(229 229 229);
     box-shadow: rgba(101, 103, 107, 0.096) 0 3px 0 0;
-    /* position: relative; */
-    /* position: sticky;
-    scroll-behavior: smooth; */
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
     
 }
 
