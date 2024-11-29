@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(85%, 85rem);
+    margin-inline: auto;
+}
+
+.btn_primary {
+    padding: 8px 10px;
+    border: 1px solid rgb(229 229 229);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn_outline {
+    background-color: #ab8a62;
+    padding: 8px 10px;
+    border: 1px solid rgba(229, 229, 229, 0.062);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn_outline_checkin {
+    background-color: #ab8a62;
+    padding: 14px 18px;
+    border: 1px solid rgba(229, 229, 229, 0.062);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.top_bar {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top_bar .contact {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #65676b;
+
+}
+
+.top_bar .location {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #65676b;
+}
+
+nav {
+    padding: 1.2rem 0;
+    border-top: 1px solid rgb(229 229 229);
+    box-shadow: rgba(101, 103, 107, 0.096) 0 3px 0 0;
+    /* position: relative; */
+    /* position: sticky;
+    scroll-behavior: smooth; */
+    
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+}
+
+nav .container ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    color: #65676b;
+    font-family: sans-serif;
+
+}
+
+nav .container .login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero {
+    background: linear-gradient(to left, rgba(13, 24, 88, 0.527), rgba(13, 24, 88, 0.527)), url(https://moonlit-tailwind.netlify.app/assets/images/banner/home-2.1.webp) center center/cover no-repeat;
+    height: min(80vh);
+}
+
+.hero .container {
+    text-align: center;
+    padding-top: 14rem;
+    line-height: 1.2;
+
+}
+
+.hero .container span {
+    font-size: 18px;
+    color: #fff;
+    font-family: "jost", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.hero .container span::before {
+    content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/left.svg);
+    padding-right: 10px;
+
+}
+
+.hero .container span::after{
+    content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/right.svg);
+    padding-left: 10px;
+}
+
+.hero .container h1 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem 0;
+    font-family: "gilda display", serif;
+}
+
+.hero .container p {
+    font-size: 18px;
+    color: #fff;
+    padding: 1.6rem 0;
+}
+
+.checkbox {
+
+    background-color: rgb(255 255 255);
+
+    /* position: absolute;
+    top: 44rem;
+    left: 13rem; */
+
+
+
+}
+
+.checkbox .container {
+    background-color: rgb(255 255 255);
+    display: flex;
+    justify-content: space-around;
+    /* gap: 2.5rem; */
+    border-radius: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 10px 10px 0 #00000018;
+    padding: 2rem 0;
+    position: relative;
+    bottom: 3rem;
+    /* width: min(60rem); */
+
+}
+
+.checkbox .check_in {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.checkbox .check_out {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    border-left: 1px solid #65676b;
+    padding: 0 1.5rem;
+}
+
+.checkbox .adult {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    border-left: 1px solid #65676b;
+    padding: 0 1.5rem;
+}
+
+.checkbox .child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    border-left: 1px solid #65676b;
+    padding: 0 1.5rem;
+}
+
+.checkbox .checkbtn {
+    border-left: 1px solid #65676b;
+    padding: 0 1.5rem;
+}
+
+.form_cal{
+    padding: 1rem 1rem;
+    border: none;
+}
+
+.form_sel{
+    padding: 1rem 1rem;
+    border: none;
+}
+
+.form_lab{
+    font-size: 20px;
+    font-family: "gilda display", serif;
+    font-weight: 400;
+    color: #000834b7;
+}
+
+.about{
+    /* height: min(80vh); */
+    padding: 5rem 0;
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .about .container .left{
+    
+    
+} */
+
+.about .container .left h3{
+   font: 20px "gilda display",serif;
+   color: #ab8a62;
+
+
+}
+.about .container .left h3::before{
+    content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/section__style__two.svg);
+}
+
+.about .container .left h1{
+font: 60px "gilda display",serif;
+color: #000834;
+padding: 1.6rem 0;
+}
+
+.about .container .left p{
+    font: 18px "jost",system-ui;
+    padding-bottom: 2rem;
+}
+
+.about .container .right .card {
+ background: url(https://moonlit-tailwind.netlify.app/assets/images/about/about-1.webp) fixed;
+ background-position: right;
+ background-size: auto;
+ border-radius: 18px;
+ width: min(548px);
+ height: min(595px);
+ 
+}
+
+.about .container .right .card .box{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    width: min(264px);
+    /* height: min(126px); */
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 5px 5px #00083434;
+    position: relative;
+    top: 4.5rem;
+    left: 25rem;
+    padding: 22px 30px 22px 22px;
+    border-radius: 16px;
+
+}
+
+.about .container .right .card .box img{
+    width: min(45px);
+    height: min(45px);
+}
+
+.about .container .right .card .box .txt span{
+    font: 32px "gilda display",serif;
+    color: #000834;
+}
+
+.about .container .right .card .box i{
+    padding-top: 1.5rem;
+}
+
+.about .container .right .card .box .txt{
+    font: 16px "jost",system-ui;
+}
+
+.service{
+    padding: 8rem 0;
+    background-color: #f1f1f1;
+}
+
+.service .container .top{
+    text-align: center;
+}
+
+.service .container .top h2{
+    font: 60px "gilda display",serif;
+
+}
+
+.service .container .top span{
+    font: 24px "gilda display",serif;
+    color: #ab8a62;
+    align-content: center;
+
+}
+
+.service .container .top span::before{
+    content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/section__style__three-1.svg);
+    padding-right: 10px;
+    
+ }
+ .service .container .top span::after{
+     content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/section__style__two.svg);
+     padding-left: 10px;
+  }
+
+.service .container .box_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.service .container .box_wrapper .box{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px 40px;
+    border-radius: 16px;
+}
+
+.service .container .box_wrapper .box h3{
+    font: 20px "gilda display",serif;
+    padding: 1.6rem 0;
+}
+
+.service .container .box_wrapper .box p{
+    font: 16px "jost",system-ui;
+}
+ 
+.room {
+    padding: 8rem 0;
+}
+
+.room .container .top{
+    display: flex;
+    justify-content: space-between;
+    
+  
+}
+
+.room .container .top .left h2 {
+ font: 24px "gilda display",serif;
+ color: #ab8a62;
+}
+
+.room .container .top .left h2::before{
+    content: url(https://moonlit-tailwind.netlify.app/assets/images/shape/section__style__two.svg);
+}
+
+.room .container .top .left h1{
+    font: 60px "gilda display",serif;
+    color: #000834;
+}
+
+.room .container .top .right {
+    width: min(660px);
+    height: min(84px);
+    font: 18px "jost",system-ui;
+    color: #65676b;
+    font-weight: 500;
+}
+
+.room .container .bottom{
+      padding: 5rem 0;  
+      display: flex;
+      gap: 4rem;
+    
+}
+
+.room .container .bottom .txt{
+    position: relative;
+    top: 34rem;
+    left: 2rem;
+    
+}
+
+.room .container .bottom .txt h2{
+    font: 32px "gilda display",serif;
+    color: #ffffff;
+}
+
+.room .container .bottom .txt h3{
+    font: 16px "gilda display",serif;
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+
+.room .container .bottom .txt h4{
+    font: 40px "gilda display",serif;
+    color: #ffffff;
+}
+
+.room .container .bottom .card-one{
+    background: linear-gradient(to left, rgba(53, 53, 53, 0.096), rgba(13, 24, 88, 0.527)), url(https://moonlit-tailwind.netlify.app/assets/images/about/about-1.webp) fixed;
+    background-position: 100% 100%;
+    background-size: auto;
+    border-radius: 12px;
+    width: min(600px);
+    height: min(680px);
+    
+}
+
+.room .container .bottom .card-two{
+    background: linear-gradient(to left, rgba(53, 53, 53, 0.096), rgba(13, 24, 88, 0.527)), url(https://moonlit-tailwind.netlify.app/assets/images/room/3.webp) fixed;
+    background-position: 50% 100%;
+    background-size:  auto;
+    border-radius: 12px;
+    width: min(600px);
+    height: min(680px);
+}
+
+.room .container .bottom .card-three{
+    background: linear-gradient(to left, rgba(53, 53, 53, 0.096), rgba(13, 24, 88, 0.527)), url(https://moonlit-tailwind.netlify.app/assets/images/room/2.webp) fixed;
+    background-position: 100% 100%;
+    background-size: auto;
+    border-radius: 12px;
+    width: min(600px);
+    height: min(680px);
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 5rem 0;
+}
+.testimonial .container{
+    text-align: center;
+
+}
+
+.testimonial .container .top span{
+    font: 24px "gilda display",serif;
+    color: rgb(171 138 98);
+}
+
+.testimonial .container .top h2{
+    font: 60px "gilda display",serif;
+    color: #000834;
+    padding: 1rem 0;
+}
+
+.testimonial .container .star{
+    font: 30px "jost",system-ui;
+    color: #ab8a62;
+    padding-bottom: 1.5rem;
+}
+
+.testimonial .container p{
+    font: 28px "jost",system-ui;
+    font-weight: 400;
+    color: #65676b;
+}
