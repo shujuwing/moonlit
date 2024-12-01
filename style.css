@@ -37,6 +37,7 @@
 .top_bar {
     padding: 1rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -53,6 +54,7 @@
 
 .top_bar .location {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     color: #65676b;
@@ -77,6 +79,7 @@ nav .container {
 
 nav .container ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     list-style: none;
@@ -87,18 +90,19 @@ nav .container ul {
 
 nav .container .login {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
 
 .hero {
     background: linear-gradient(to left, rgba(13, 24, 88, 0.527), rgba(13, 24, 88, 0.527)), url(https://moonlit-tailwind.netlify.app/assets/images/banner/home-2.1.webp) center center/cover no-repeat;
-    height: min(80vh);
+    height: max(80vh);
 }
 
 .hero .container {
     text-align: center;
-    padding-top: 14rem;
+    padding: 8rem 0;
     line-height: 1.2;
 
 }
@@ -132,8 +136,10 @@ nav .container .login {
 .hero .container p {
     font-size: 18px;
     color: #fff;
-    padding: 1.6rem 0;
+    padding: 1.3rem 0;
 }
+
+
 
 .checkbox {
 
@@ -150,11 +156,12 @@ nav .container .login {
 .checkbox .container {
     background-color: rgb(255 255 255);
     display: flex;
+    
     justify-content: space-around;
     /* gap: 2.5rem; */
     border-radius: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0 10px 10px 0 #00000018;
+    box-shadow: 10px 10px 10px 10px #00000018;
     padding: 2rem 0;
     position: relative;
     bottom: 3rem;
@@ -173,6 +180,7 @@ nav .container .login {
 .checkbox .check_out {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 0.5rem;
     text-align: center;
     border-left: 1px solid #65676b;
@@ -191,6 +199,7 @@ nav .container .login {
 .checkbox .child {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 0.5rem;
     text-align: center;
     border-left: 1px solid #65676b;
@@ -225,7 +234,8 @@ nav .container .login {
 }
 .about .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -260,7 +270,7 @@ padding: 1.6rem 0;
  background-position: right;
  background-size: auto;
  border-radius: 18px;
- width: min(548px);
+ max-width: 600px;
  height: min(595px);
  
 }
@@ -268,15 +278,16 @@ padding: 1.6rem 0;
 .about .container .right .card .box{
     background-color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 28px;
-    width: min(264px);
+   
     /* height: min(126px); */
     /* border: 2px solid black; */
     box-shadow: 5px 5px 5px 5px #00083434;
     position: relative;
-    top: 4.5rem;
-    left: 25rem;
+    top: 4rem;
+    left: 4rem;
     padding: 22px 30px 22px 22px;
     border-radius: 16px;
 
@@ -333,6 +344,7 @@ padding: 1.6rem 0;
 
 .service .container .box_wrapper{
     display: flex;
+    
     justify-content: center;
     gap: 2rem;
     padding-top: 2rem;
@@ -360,6 +372,7 @@ padding: 1.6rem 0;
 
 .room .container .top{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
   
@@ -390,7 +403,9 @@ padding: 1.6rem 0;
 .room .container .bottom{
       padding: 5rem 0;  
       display: flex;
-      gap: 4rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
     
 }
 
@@ -422,7 +437,7 @@ padding: 1.6rem 0;
     background-position: 100% 100%;
     background-size: auto;
     border-radius: 12px;
-    width: min(600px);
+    /* width: max(600px); */
     height: min(680px);
     
 }
@@ -432,7 +447,7 @@ padding: 1.6rem 0;
     background-position: 50% 100%;
     background-size:  auto;
     border-radius: 12px;
-    width: min(600px);
+    /* width: min(600px); */
     height: min(680px);
 }
 
@@ -441,7 +456,7 @@ padding: 1.6rem 0;
     background-position: 100% 100%;
     background-size: auto;
     border-radius: 12px;
-    width: min(600px);
+    /* width: min(600px); */
     height: min(680px);
 }
 
@@ -475,4 +490,37 @@ padding: 1.6rem 0;
     font: 28px "jost",system-ui;
     font-weight: 400;
     color: #65676b;
+}
+
+@media screen and (max-width: 1000px){
+    .checkbox .container{
+        display: block;
+        bottom: -3rem;
+    }
+}
+
+@media screen and (max-width: 803px) {
+
+    header .container{
+        display: block ;
+    }
+
+    nav .container ul{
+        display: none;
+
+    }
+    nav .container .login{
+        display: none;
+    }
+    .hero {
+        height: auto;
+    }
+    .hero .container {
+        
+    }
+    .service .container .box_wrapper{
+        flex-wrap: wrap;
+        
+    }
+
 }
